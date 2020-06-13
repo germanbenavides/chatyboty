@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+<category>
+    <pattern>MI NOMBRE ES *</pattern>
+    <template>Hola <set name="username"><star /></set>!</template>
+</category>
+<category>
+    <pattern>CUAL ES MI NOMBRE</pattern>
+    <template>Su nombre es  <get name="username"/></template>
+</category>
+<category>
+    <pattern>QUE ES TAXONOMIA</pattern>
+    <template>ES LA CLASIFICACIÓN DE LAS PLANTAS</template>
+</category>
+<category>
+    <pattern>DIME MAS</pattern>
+    <thats>ES LA CLASIFICACIÓN DE LAS PLANTAS</thats>
+    <template>Estudia las relaciones de parentesco</template>
+</category>
+Random
+<category>
+    <pattern>POR EJEMPLO</pattern>
+    <template>
+        <random>
+            <li>Angustifolia</li>
+            <li>Poacea</li>
+            <li>Graminea</li>
+            <li>Bambusoideae</li>
+        </random>
+    </template>
+</category>
+
+</aiml>
